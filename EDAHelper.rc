@@ -1,0 +1,396 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EDAHELPER_DIALOG DIALOGEX 0, 0, 401, 214
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EDAHelper"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "最小化",IDC_BUTTON_MINIMIZE,37,193,50,14
+    PUSHBUTTON      "设置",IDC_PROPERTY,172,193,50,14
+    EDITTEXT        IDC_EDIT_DESC,7,7,387,152,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "EDAHelper(V2.1.05) 2011年06月14日 群号:74306669, Email:spacexplorer@163.com",
+                    IDC_SW_INFO,42,177,332,8
+    CONTROL         "随Windows启动",IDC_CHECK_AUTORUN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,163,68,10
+    PUSHBUTTON      "帮助",IDC_BUTTON_HELP,371,162,23,14
+    PUSHBUTTON      "关闭",IDOK,297,193,50,14
+    LTEXT           "查看更新",IDC_STATIC_HOME,278,164,43,9
+    LTEXT           "论坛反馈",IDC_STATIC_FEEDBACK,325,164,46,9
+END
+
+IDD_SETTING_PROTEL DIALOG DISCARDABLE  0, 0, 204, 123
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Protel和DXP"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Protel和DXP增强使能",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,10,96,10
+    CONTROL         "中键缩放",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,37,60,10
+    CONTROL         "中键换层(PCB)",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,59,68,10
+    CONTROL         "中键放器件(SCH)",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,69,93,10
+    CONTROL         "原理图右键拖动",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,48,74,10
+    GROUPBOX        "详细",IDC_STATIC,7,26,190,83,WS_GROUP
+    CONTROL         "中键拖动各操作(说明里有详细)",IDC_CHECK6,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,79,128,10
+    CONTROL         "左键拖动右键旋转",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,89,93,10
+END
+
+IDD_SETTING_PADS DIALOG DISCARDABLE  0, 0, 256, 114
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "PADS"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "PADS增强使能",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,10,96,10
+    CONTROL         "中键缩放",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,37,60,10
+    CONTROL         "中键换层",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,59,60,10
+    CONTROL         "右键拖动",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,48,60,10
+    GROUPBOX        "详细",IDC_STATIC,7,26,95,58,WS_GROUP
+    CONTROL         "左键拖动右键旋转",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,69,80,10
+    GROUPBOX        "右键拖动方式",IDC_STATIC,110,26,128,26
+    CONTROL         "选中平滑方式/不选中传统方式",IDC_CHECK6,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,115,38,124,10
+    GROUPBOX        "缩放方式",IDC_STATIC,110,58,128,26,NOT WS_VISIBLE
+    CONTROL         "选中平滑方式/不选中传统方式",IDC_CHECK7,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_GROUP | WS_TABSTOP,
+                    115,70,124,10
+END
+
+IDD_SETTING_ORCAD DIALOG DISCARDABLE  0, 0, 213, 121
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Orcad"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Orcad Capture增强使能",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,10,96,10
+    CONTROL         "中键缩放",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,37,60,10
+    CONTROL         "中键点击放器件",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,47,60,10
+    GROUPBOX        "详细",IDC_STATIC,7,26,188,86,WS_GROUP
+    CONTROL         "中键拖动各操作(说明里有详细)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,57,128,10
+    CONTROL         "右键拖动",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,67,48,10
+END
+
+IDD_SETTING_CAM350 DIALOG DISCARDABLE  0, 0, 213, 110
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "CAM350"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "CAM350增强使能",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,10,96,10
+    CONTROL         "中键缩放",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,37,60,10
+    CONTROL         "中键单击显示全部(两次击键，详见说明)",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,47,160,10
+    GROUPBOX        "详细",IDC_STATIC,7,26,188,74,WS_GROUP
+    CONTROL         "中键拖动各操作(说明里有详细)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,57,128,10
+    CONTROL         "右键拖动",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,67,48,10
+END
+
+IDD_SETTING_SABER DIALOG DISCARDABLE  0, 0, 224, 113
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Saber"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Saber增强使能",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,10,96,10
+    CONTROL         "中键缩放",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,37,60,10
+    GROUPBOX        "详细",IDC_STATIC,7,26,188,74,WS_GROUP
+END
+
+IDD_SETTING_PCSCH DIALOG DISCARDABLE  0, 0, 224, 113
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "PC Schematic"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "PC Schematic增强使能",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,10,96,10
+    CONTROL         "中键缩放(需修改缩放快捷键为Pageup,Pagedown)",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,37,
+                    188,10
+    CONTROL         "右键拖动",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,48,60,10
+    GROUPBOX        "详细",IDC_STATIC,7,26,188,74,WS_GROUP
+END
+
+IDD_SETTING_ALLEGRO DIALOG DISCARDABLE  0, 0, 251, 118
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Allegro"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Allegro增强使能",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,10,76,10
+    CONTROL         "中键缩放(按15.7的缩放快捷键F10、F11,新版本请关闭)",
+                    IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,10,37,212,10
+    GROUPBOX        "详细",IDC_STATIC,7,26,216,74,WS_GROUP
+    CONTROL         "中键移动反转(适合习惯了AUTOCAD的用户)",IDC_CHECK3,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,47,
+                    164,10
+END
+
+IDD_SETTING_CCAM DIALOG DISCARDABLE  0, 0, 224, 113
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Circuit CAM"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Circuit CAM增强使能",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,10,92,10
+    CONTROL         "中键缩放",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,37,48,10
+    CONTROL         "右键拖动",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,10,48,60,10
+    GROUPBOX        "详细",IDC_STATIC,7,26,188,74,WS_GROUP
+END
+
+IDD_UPDATE_DIALOG DIALOG DISCARDABLE  0, 0, 257, 164
+STYLE WS_POPUP | WS_CAPTION
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "进入下载页面",IDOK,14,143,57,14
+    PUSHBUTTON      "该版不再提醒",IDIGNORE,105,143,57,14
+    PUSHBUTTON      "下次提醒",IDCANCEL,192,143,50,14
+    EDITTEXT        IDC_UPDATE_INFO,7,7,243,127,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_EDAHELPER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 394
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_SETTING_PROTEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_SETTING_PADS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_SETTING_ORCAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_SETTING_CAM350, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_SETTING_SABER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_SETTING_PCSCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_SETTING_ALLEGRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_SETTING_CCAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_UPDATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HAND         CURSOR  DISCARDABLE     "res\\cursor1.cur"
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EDAHelper.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 EDAHelper(&A)..."
+    IDS_PROPSHT_CAPTION     "增强功能使能设置"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\EDAHelper.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
